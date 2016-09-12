@@ -39,19 +39,21 @@
             <form action="https://formspree.io/taylor.a.hurt@gmail.com" method="POST">
               <span>
                 <label for="name">NAME</label>
-                <input type="text" name="name" value="" placeholder="First Last" required>
+                <input type="text" name="name" placeholder="First Last" required>
               </span>
 
               <span>
                 <label for="email">EMAIL</label>
-                <input type="email" name="email" value="" placeholder="account@email.com" required>
+                <input type="email" name="_cc" placeholder="account@email.com" required>
               </span>
 
               <span>
                 <label for="phone">PHONE</label>
-                <input type="tel" name="phone" value="" placeholder="555-555-5555" required pattern="^\d{3}-\d{3}-\d{4}$">
+                <input type="tel" name="phone" placeholder="555-555-5555" required pattern="^\d{3}-\d{3}-\d{4}$">
               </span>
 
+              <input type="hidden" name="_next" value="https://thurt.github.io/sample-landing-page/thanks.html">
+              <input type="hidden" name="_subject" value="Request for Estimate" />
               <input type="submit" name="submit" value="SAVE $150">
             </form>
           </section>
