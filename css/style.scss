@@ -1,0 +1,198 @@
+$font: Helvetica, Arial, sans-serif;
+$c1: #cc0033; /* reddish rgb 204, 0, 51 */
+$c2: #004b83; /* blueish rgb 0, 75, 131*/
+
+.c1 { /* reddish */
+  color: #cc0033;
+}
+
+@mixin flex-column-center() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  body {
+    @extend html;
+    @include flex-column-center();
+    font-family: $font;
+    font-size: calc(8px + 1vw);
+    line-height: 1.2;
+    > header {
+      height: 3vw;
+      padding: 1vw 0;
+      min-height: 25px;
+      min-width: 320px;
+      width: 60%;
+      display: flex;
+      flex-direction: row;
+      color: $c2;
+      a {
+        height: 100%;
+        flex: 0;
+        img {
+          @extend a;
+        }
+      }
+      > p {
+        font-size: calc(8px + 1vw);
+        flex: 1;
+        text-align: right;
+        margin: 0;
+        font-weight: bold;
+      }
+    }
+    > main {
+      @include flex-column-center();
+      width: 100%;
+      > * {
+        @extend main;
+      }
+      #promo-splash {
+        @include flex-column-center();
+        width: 100%;
+        background-image: url('../img/house.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        padding: 4vw 0;
+        border-top: 1.5vw solid $c1;
+        border-bottom: 2vw solid $c2;
+        .opaque-box {
+          @include flex-column-center();
+          text-align: center;
+          box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8);
+          width: 50%;
+          min-width: 320px;
+        }
+        header {
+          color: $c2;
+          padding: 2vw 0;
+          width: 100%;
+          background-color: rgba(255, 255, 255, 0.8);
+          h1 {
+            font-size: calc(24px + 1vw);
+            margin: 0;
+          }
+          h2 {
+            font-size: calc(12px + 1vw);
+            margin: 0;
+          }
+          hr {
+            border: 1px solid #cc0033;
+            width: 55%;
+          }
+          h3 {
+            font-size: calc(10px + 1vw);
+            margin: 0;
+          }
+        }
+        section {
+          width: 100%;
+          background-color: rgba(255, 255, 255, 0.8);
+        }
+        section.highlight {
+          font-weight: bold;
+          color: white;
+          background-color: rgba(204, 0, 51, 0.7); /* reddish */
+          padding: 0.5vw 0;
+        }
+        em {
+          font-size: calc(36px + 1vw);
+          font-style: normal;
+          font-weight: bold;
+        }
+        small {
+          font-size: xx-small;
+        }
+        form {
+          @include flex-column-center();
+          padding-top: 1vw;
+          padding-bottom: 3vw;
+          font-size: 12pt;
+          * {
+            margin: 0.2vw;
+          }
+          span {
+            width: 60%;
+            min-width: 320px;
+            text-align: right;
+            position: relative;
+            right: 2vw;
+          }
+          input[type="text"],
+          input[type="email"],
+          input[type="tel"] {
+            font-size: 12pt;
+            padding: 0.5vw;
+            width: 75%;
+            border: 1px solid LightGray;
+          }
+          label {
+            font-size: 12pt;
+            align-self: center;
+            flex-basis: 100px;
+          }
+          input[type="submit"] {
+            background-color: #cc0033;
+            color: white;
+            font-weight: bold;
+            font-size: larger;
+            padding: 0.5vw 2vw;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-top: 1vw;
+          }
+        }
+        footer {
+          background-color: rgba(0, 75, 131, 0.7); /* blueish */
+          width: 100%;
+          font-size: smaller;
+          ul {
+            padding: 0;
+          }
+          li {
+            color: white;
+            display: inline;
+            padding: 0 4px;
+          }
+          li:before {
+            content: "\2713";
+          }
+        }
+      }
+      #service-details {
+        padding: 2vw;
+        width: 60vw;
+        min-width: 320px;
+        h1 {
+          color: $c1;
+        }
+        h3 {
+          color: $c2;
+        }
+        ul {
+          color: $c1;
+          list-style-image: url('../img/bullet.png');
+        }
+      }
+    }
+    > footer {
+      background-color: $c1;
+      text-align: center;
+      color: white;
+      padding: 1vw 0;
+      width: 100%;
+      border-bottom: 1vw solid $c2;
+      em {
+        font-size: larger;
+        font-style: normal;
+        font-weight: bold;
+      }
+    }
+  }
+}

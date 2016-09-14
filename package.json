@@ -1,0 +1,22 @@
+{
+  "name": "sample-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node-sass css/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thurt/sample-landing-page.git"
+  },
+  "author": "thurt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thurt/sample-landing-page/issues"
+  },
+  "homepage": "https://github.com/thurt/sample-landing-page#readme",
+  "devDependencies": {
+    "node-sass": "^3.9.3"
+  }
+}
