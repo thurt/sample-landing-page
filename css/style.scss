@@ -178,7 +178,19 @@ html {
         }
         ul {
           color: $c1;
-          list-style-image: url('../img/bullet.png');
+          list-style: none;
+          padding-left: 1em;
+          li:before {
+            content: '';
+            display: inline-block;
+            height: 1em;
+            width: 1.5em;
+            background-image: url('../img/bullet.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-y: bottom;
+            margin-right: 0.1em;
+          }
         }
       }
     }
