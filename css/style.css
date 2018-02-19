@@ -104,18 +104,18 @@ html, html body {
             text-align: right;
             position: relative;
             right: 2vw; }
-          html body > main #promo-splash form input[type="text"], html body body > main #promo-splash form input[type="text"],
-          html body > main #promo-splash form input[type="email"], html body body > main #promo-splash form input[type="email"],
-          html body > main #promo-splash form input[type="tel"], html body body > main #promo-splash form input[type="tel"] {
+          html body > main #promo-splash form input[type='text'], html body body > main #promo-splash form input[type='text'],
+          html body > main #promo-splash form input[type='email'], html body body > main #promo-splash form input[type='email'],
+          html body > main #promo-splash form input[type='tel'], html body body > main #promo-splash form input[type='tel'] {
             font-size: 12pt;
             padding: 0.5vw;
             width: 75%;
             border: 1px solid LightGray; }
           html body > main #promo-splash form label, html body body > main #promo-splash form label {
-            font-size: 12pt;
+            font-size: 11pt;
             align-self: center;
             flex-basis: 100px; }
-          html body > main #promo-splash form input[type="submit"], html body body > main #promo-splash form input[type="submit"] {
+          html body > main #promo-splash form input[type='submit'], html body body > main #promo-splash form input[type='submit'] {
             background-color: #cc0033;
             color: white;
             font-weight: bold;
@@ -137,7 +137,7 @@ html, html body {
             display: inline;
             padding: 0 4px; }
           html body > main #promo-splash footer li:before, html body body > main #promo-splash footer li:before {
-            content: "\2713"; }
+            content: '\2713'; }
       html body > main #service-details, html body body > main #service-details {
         padding: 2vw;
         width: 60vw;

@@ -2,7 +2,8 @@ $font: Helvetica, Arial, sans-serif;
 $c1: #cc0033; /* reddish rgb 204, 0, 51 */
 $c2: #004b83; /* blueish rgb 0, 75, 131*/
 
-.c1 { /* reddish */
+.c1 {
+  /* reddish */
   color: #cc0033;
 }
 
@@ -123,20 +124,20 @@ html {
             position: relative;
             right: 2vw;
           }
-          input[type="text"],
-          input[type="email"],
-          input[type="tel"] {
+          input[type='text'],
+          input[type='email'],
+          input[type='tel'] {
             font-size: 12pt;
             padding: 0.5vw;
             width: 75%;
             border: 1px solid LightGray;
           }
           label {
-            font-size: 12pt;
+            font-size: 11pt;
             align-self: center;
             flex-basis: 100px;
           }
-          input[type="submit"] {
+          input[type='submit'] {
             background-color: #cc0033;
             color: white;
             font-weight: bold;
@@ -161,7 +162,7 @@ html {
             padding: 0 4px;
           }
           li:before {
-            content: "\2713";
+            content: '\2713';
           }
         }
       }
